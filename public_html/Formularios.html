@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Formulario</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div style=" text-align: center ">
+            <fieldset>
+                <legend align="center">Formulario de datos Personales</legend>
+                <form>
+                    <!-- transaccion de datos
+                    GET: se visualiza en la Url los datos
+                    POST: no se visualiza en la Url o se muestra cifrado en hexadecimal -->
+                    <label>Nombres:</label>
+                    <input type="text" name="nom" id="nom"/>
+                    <br/>
+                    <label>Apellidos:</label>
+                    <input type="text" name="ap" id="ap"/>
+                    <br/>
+                    <label>Edad:</label>
+                    <input type="number" name="edad" id="edad"/>
+                    <br/>
+                    <label>Fecha de Nacimiento:</label>
+                    <input type="date" name="fNac" id="fNac"/>
+                    <br/>
+                    <label>Correo:</label>
+                    <input type="email" name="correo" id="correo"/>
+                    <br/>
+                    <label>Dirección:</label>
+                    <textarea name="dir" id="dir"></textarea>
+                    <br>
+                    <!-- Tipos de Botones -->
+                    <input type="button" value="Enviar Datos" onclick=" "/>
+                    <br>
+                    <input type="submit" value="Enviar Datos" onclick=" "/>
+                    <br/>
+                    <button type="submit">Enviar Datos</button>
+                    <button type="button">Enviar Datos</button>
+                </form>
+            </fieldset>
+            <fieldset>
+                <legend>Foemulario Vehículos</legend>
+                <form>
+                    <table align="center">
+                        <tr>
+                            <td>
+                                <label>Placa:</label>
+                            </td>
+                            <td>
+                                <input type="text" id="pl"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Marca:</label>
+
+                            </td>
+                            <td>
+                                <select id="marca">
+                                    <option value="Mazda">Mazda</option>
+                                    <option value="Chevrolet">Chevrolet</option>
+                                    <option value="Toyota">Toyota</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Color:</label>
+                            </td>
+                            <td>
+                                <select id="color">
+                                    <option value="Negro">Negro</option>
+                                    <option value="Azul">Azul</option>
+                                    <option value="Rojo">Rojo</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Año:</label>
+                            </td>
+                            <td>
+                                <input type="number" id="anio">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Region:</label>
+                            </td>
+                            <td>
+                                <input type="radio" name="region" id="costa"/>Costa<br>
+                                <input type="radio" name="region" id="sierra"/>Sierra<br>
+                                <input type="radio" name="region" id="oriente"/>Oriente<br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Region:</label>
+                            </td>
+                            <td>
+                                <input type="checkbox" id="costaCh"/>Costa<br>
+                                <input type="checkbox" id="sierraCh"/>Sierra<br>
+                                <input type="checkbox" id="orienteCh"/>Oriente<br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+
+                            </td>
+                            <td>
+                                <input type="button" value="Guardar Datos" onclick=" "/>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </fieldset>
+        </div>
+    </body>
+</html>
